@@ -1,0 +1,67 @@
+.homeTesti_container {
+	// border: 1px solid white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+
+	h2 {
+		display: block;
+		font-size: var(--h2);
+	}
+
+	.slider {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.testiSlider {
+  width: 100%;
+  .swiper {
+    .swiper-slide {
+      width: 20%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .testiSlider {
+    .swiper {
+      .swiper-slide {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .testiSlider {
+    .swiper {
+      .swiper-slide {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .homeTesti_container {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .testiSlider {
+    .swiper {
+      .swiper-slide {
+        width: 80%;
+      }
+    }
+  }
+}

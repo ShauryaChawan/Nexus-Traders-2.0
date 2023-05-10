@@ -1,0 +1,155 @@
+.homeAbout_container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  .col_1 {
+    border-left: 3px solid white;
+    // border: 1px solid white;
+    width: 50%;
+    padding: 50px 50px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h2{
+      font-size: var(--h2);
+    }
+    h3{
+      font-size: var(--h3);
+    }
+
+    p {
+      width: 90%;
+      font-size: var(--normal_fs);
+      line-height: 1.5rem;
+      text-align: justify;
+    }
+
+    button {
+      // margin: 30px 0 10px 0;
+      width: 250px;
+      border: 5px solid var(--NexusGold);
+      color: var(--NexusGold);
+      font-size: 1.1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .icon {
+        background-color: "transparent";
+        font-size: 1.2rem;
+        color: var(--NexusGold) !important;
+        // border-color: var(--NexusGold);
+        border: 0;
+      }
+    }
+  }
+
+  .col_2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .homeAbout_container {
+    .col_1 {
+      padding: 50px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .homeAbout_container {
+    padding: 2rem;
+    .col_1 {
+      width: 60%;
+      padding: 2rem;
+      p{
+        width: 100%;
+      }
+    }
+    .col_2 {
+      width: 40%;
+      // justify-content: start;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .homeAbout_container {
+    flex-direction: column;
+    border-left: 3px solid white;
+    padding: 1rem;
+    justify-content: center;
+    margin-left: 3rem;
+
+    .col_1,.col_2{
+      width: 100%;
+    }
+
+    .col_1{
+      order: 2;
+      border: none;
+      padding: 50px 0;
+      justify-content: center;
+      
+      h2, h3{
+        text-align: center;
+      }
+    
+      p{
+        width: 80%;
+      }
+    }
+    .col_2{
+      order: 1;
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px){
+  .homeAbout_container {
+    margin-left: 1rem;
+    padding: 1rem;
+
+    .col_1{
+      padding: 1rem;
+      h2{
+        font-size: 2rem;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        width: 100%;
+      }
+    }
+    .col_2{
+      img {
+        width: 80%;
+      }
+    }
+  }
+}

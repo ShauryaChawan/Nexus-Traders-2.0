@@ -1,0 +1,126 @@
+.nav_container {
+  // padding: 1rem;
+  background-color: black;
+  color: white;
+  // height: 100px;
+  transition: all ease-in-out 1s;
+  position: relative;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .left {
+      // border: 1px solid red; // do not delete
+      img {
+        width: 50px;
+      }
+    }
+    .right {
+      display: flex;
+      // justify-content: space-around;
+      justify-content: end;
+      align-items: center;
+      gap: 5rem;
+      padding: 1rem;
+      width: 100%;
+      font-size: var(--normal_fs);
+      // border: 1px solid red; // do not delete
+
+      .menu {
+        cursor: pointer;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      .active {
+        color: var(--NexusGold);
+      }
+
+      .btns {
+        border: 2px solid var(--NexusGold);
+        border-radius: 1rem;
+        color: var(--NexusGold);
+        padding: 0 1rem;
+
+        button {
+          // min-width: 115px;
+          color: var(--NexusGold);
+          border-radius: 1rem;
+          border: 0;
+          width: auto;
+          padding: 10px 20px;
+          font-size: var(--normal_fs);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .btn_toggle {
+      display: none;
+    }
+  }
+
+  .bottom {
+    // #bottom_nav {
+    position: absolute;
+    padding: 1rem;
+    top: 80px;
+    height: 95vh;
+    display: flex;
+    // border: 1px solid white;
+    background-color: black;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+
+    .menu {
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+    .active {
+      color: var(--NexusGold);
+    }
+
+    .btns {
+      border: 2px solid var(--NexusGold);
+      border-radius: 1rem;
+      color: var(--NexusGold);
+      padding: 0 1rem;
+
+      button {
+        // min-width: 115px;
+        color: var(--NexusGold);
+        border-radius: 1rem;
+        border: 0;
+        width: auto;
+        padding: 10px 20px;
+        font-size: var(--normal_fs);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .nav_container {
+    .top {
+      .right {
+        display: none;
+      }
+      .btn_toggle {
+        display: block;
+      }
+    }
+  }
+}
