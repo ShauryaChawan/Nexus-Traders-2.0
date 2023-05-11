@@ -1,8 +1,8 @@
 export const TeamData = [
   {
     img: "assets/images/hitesh.png",
-    Img_Order: 1,
-    Info_Order: 2,
+    imgOrder: 1,
+    infoOrder: 2,
     cap1: "H",
     smtxt1: "ITESH ",
     cap2: "G",
@@ -14,8 +14,8 @@ export const TeamData = [
   },
   {
     img: "assets/images/sujoy.png",
-    Img_Order: 2,
-    Info_Order: 1,
+    imgOrder: 2,
+    infoOrder: 1,
     cap1: "S",
     smtxt1: "UJOY ",
     cap2: "B",
