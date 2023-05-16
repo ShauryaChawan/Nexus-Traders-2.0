@@ -7,6 +7,7 @@ import Courses from "./pages/Courses/Courses";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Layout from "./Layout";
+import Loading from "./common components/Loading/Loading";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +32,10 @@ function App() {
     {
       path: "/signin",
       element: <SignIn />,
+    },
+    {
+      path: "/loading",
+      element: <Loading />,
     },
     {
       path: "/signup",

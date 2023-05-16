@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./common components/Navbar/Navbar";
 import Footer from "./common components/Footer/Footer";
+import Loading from "./common components/Loading/Loading";
 
 const Layout = () => {
   const [loading, setLoading] = useState(true);
@@ -76,7 +77,7 @@ const Layout = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div><Loading loading={loading}/></div>;
   }
 
   return (

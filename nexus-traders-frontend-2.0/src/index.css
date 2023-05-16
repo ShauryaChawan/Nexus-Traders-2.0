@@ -69,6 +69,7 @@
 body {
   /* background-color: var(--WebsiteBackground); */
   background-color: black;
+  transition: 0s;
   /* background-color: white; */
   /* color: black; */
 }
