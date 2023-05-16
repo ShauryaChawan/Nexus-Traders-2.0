@@ -30,11 +30,14 @@ const Navbar = () => {
           <NavLink to="/courses" className="menu">
             Courses
           </NavLink>
-          <NavLink to="/courses" className="btns">
+          {/* <NavLink to="/blogs" className="menu">
+            Blogs
+          </NavLink> */}
+          {/* <NavLink to="/courses" className="btns">
             <button>SignIn</button>
             <span>/</span>
             <button>SignUp</button>
-          </NavLink>
+          </NavLink> */}
         </div>
 
         <div className="btn_toggle" onClick={toggler}>
@@ -42,7 +45,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div className="bottom" id="bottom_nav" style={{ display: isNavOpen ? "flex" : "none" }}> */}
       <div
         className="bottom"
         id="bottom_nav"
@@ -57,14 +59,14 @@ const Navbar = () => {
         <NavLink to="/courses" className="menu">
           Courses
         </NavLink>
-        <NavLink to="/blogs" className="menu">
+        {/* <NavLink to="/blogs" className="menu">
           Blogs
-        </NavLink>
-        <NavLink to="/courses" className="btns">
+        </NavLink> */}
+        {/* <NavLink to="/courses" className="btns">
           <button className="menu">SignIn</button>
           &nbsp;/&nbsp;
           <button className="menu">SignUp</button>
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
