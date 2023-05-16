@@ -1,12 +1,15 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./homeHeader.scss";
-const HomeSampleImg = './assets/images/home_sample_img_1.png';
 
+const HomeSampleImg = "./assets/images/home_sample_img_1.png";
 
 const HomeHeader = () => {
+
   return (
-    <div className="homeHeader_container" style={{backgroundImage: `url(${HomeSampleImg})`}}>
+    <div
+      className="homeHeader_container"
+      style={{ backgroundImage: `url(${HomeSampleImg})` }}
+    >
       <h1>NEXUS TRADERS</h1>
       <h2>TURNING WEALTH INTO EMPIRE</h2>
 

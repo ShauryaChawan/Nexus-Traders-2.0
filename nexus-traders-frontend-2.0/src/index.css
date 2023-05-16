@@ -21,8 +21,8 @@
 :root {
   /* Colors */
   --NexusGold: #daa520;
-  --WebsiteBackground: #141416;
-  --BlackShade2: #292929;
+  --NexusBlack: #141416;
+  --NexusBlack2: #292929;
   /* --WebsiteBackground: black; */
   --FontColor: white;
 
@@ -79,8 +79,7 @@ a {
 }
 
 button{
-  /* font-family: var(--poppins); */
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 h1,
