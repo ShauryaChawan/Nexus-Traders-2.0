@@ -1,4 +1,3 @@
-import React from "react";
 import "./courseHeader.scss";
 const sample_img_1 = "./assets/images/sample_image_1.png";
 

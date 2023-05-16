@@ -60,7 +60,10 @@ Cards.propTypes = {
 const HomeInfo = () => {
   return (
     <div className="homeInfo_container">
-      <div className="col_1" style={{backgroundImage: `url(${HomeSampleImg_2})`}}>
+      <div
+        className="col_1"
+        style={{ backgroundImage: `url(${HomeSampleImg_2})` }}
+      >
         <img src={LogoWithSignature} alt="logo 2" />
       </div>
       <div className="col_2">

@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 const CourseCard = (props) => {
   const insertingComma = (amount) => {
     const str_num = amount.toLocaleString();
-    // console.log(str_num);
-    // console.log(typeof(str_num));
     return str_num;
   };
 
@@ -48,7 +46,6 @@ const CourseCard = (props) => {
           </div>
           <div className="sub_btn">
             <a href={props.path} target="_blank" rel="noreferrer">
-              {/* <button onClick={() => navigate('/pay')}>Enroll Now</button> */}
               <button>Enroll Now</button>
             </a>
           </div>

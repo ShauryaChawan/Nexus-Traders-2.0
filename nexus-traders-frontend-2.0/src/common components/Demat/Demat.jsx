@@ -1,4 +1,3 @@
-import React from "react";
 import "./demat.scss";
 
 const Demat = () => {
@@ -11,7 +10,7 @@ const Demat = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="button"> Open an Account</button>
+          <button className="btn"> Open an Account</button>
         </a>
         <div className="hr"></div>
       </div>

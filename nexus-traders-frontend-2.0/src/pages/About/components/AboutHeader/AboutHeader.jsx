@@ -1,4 +1,3 @@
-import React from "react";
 import "./aboutHeader.scss";
 const sample_img_1 = "./assets/images/sample_image_1.png";
 
@@ -9,7 +8,7 @@ const AboutHeader = () => {
       style={{ backgroundImage: `url(${sample_img_1})` }}
     >
       <div className="trasparent_box"></div>
-			<div className="content">
+      <div className="content">
         <h1>About Us</h1>
 
         <p className="subTitle">Turning Wealth Into Empire</p>

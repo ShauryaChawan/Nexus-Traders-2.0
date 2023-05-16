@@ -2,6 +2,7 @@ import "./courses.scss";
 import CourseHeader from "./components/CourseHeader/CourseHeader";
 import CourseCard from "./components/CourseCard/CourseCard";
 import { CoursesData } from "../../data/CoursesData";
+import PreRegistration from "../../common components/PreRegistration/PreRegistration";
 
 const Courses = () => {
   return (
@@ -11,6 +12,7 @@ const Courses = () => {
         <CourseHeader />
       </div>
       {/* Courses Pregistration */}
+      <PreRegistration />
 
       {/* Courses Card */}
       <div className="courses">

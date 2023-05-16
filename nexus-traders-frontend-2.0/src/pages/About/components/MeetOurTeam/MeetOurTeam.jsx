@@ -5,9 +5,6 @@ const instagram = "./assets/images/instagram.png";
 const linkedin = "./assets/images/linkedin.png";
 
 const MTTCard = (props) => {
-
-	// console.log(typeof(props.imgOrder))
-
   return (
     <div className="MTT_card_container">
       <div className="MTT_card_img" style={{ order: props.imgOrder }}>

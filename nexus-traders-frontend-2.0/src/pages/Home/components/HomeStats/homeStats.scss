@@ -39,15 +39,15 @@
   }
 }
 
-@media (max-width: 400px){
-	.homeStats_container {
-		.top {
-			h2 {
-				font-size: 3rem;
-			}
-		}
-    .bottom{
+@media (max-width: 400px) {
+  .homeStats_container {
+    .top {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    .bottom {
       gap: 3rem;
     }
-	}
+  }
 }

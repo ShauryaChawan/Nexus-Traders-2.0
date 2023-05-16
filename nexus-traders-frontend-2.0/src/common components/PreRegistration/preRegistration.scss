@@ -1,24 +1,12 @@
-$cinzel: "Cinzel", serif;
-$Varela_round: "Varela Round", sans-serif;
-
-// ---------- ---------- ----------
-
-// iPads, Tablets                   –> 481px — 768px
-$tablets: 768px;
-// Mobile devices                   –> 320px — 480px
-$mobile: 480px;
-
-// ---------- ---------- ----------
-
-.demat {
+.preRegistration_container {
   width: 100%;
-  background-color: #daa520;
+  background-color: var(--NexusGold);
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 2rem;
 
   .content {
-    width: 95%;
+    width: 100%;
     //   background-color: #141416;
     background-color: black;
     display: flex;
@@ -34,18 +22,19 @@ $mobile: 480px;
       // font-weight: bold;
     }
 
-    .button {
+    .btn {
       margin: 30px 0 10px 0;
-      background-color: #daa520;
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 18px;
+      background-color: var(--NexusGold);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 1.2rem;
       font-weight: bold;
-      font-family: $Varela_round;
-      cursor: pointer;
+      color: black;
+      // cursor: pointer;
+      border: 0;
 
       &:hover {
-        background-color: #ffb701;
+        color: white;
       }
     }
 
@@ -56,19 +45,7 @@ $mobile: 480px;
   }
 }
 
-// iPads, Tablets                   –> 481px — 768px
-// $tablets: 768px;
-
-// @media (max-width: $tablets) {
-//   .demat {}
-// }
-
-// ---------- ---------- ----------
-
-// Mobile devices                   –> 320px — 480px
-// $mobile: 480px;
-
-@media (max-width: $mobile) {
+@media (max-width: 450px) {
   .demat {
     padding: 2rem;
 

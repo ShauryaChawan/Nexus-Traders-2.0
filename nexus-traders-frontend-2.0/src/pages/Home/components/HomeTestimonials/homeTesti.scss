@@ -1,21 +1,21 @@
 .homeTesti_container {
-	// border: 1px solid white;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
-	gap: 2rem;
+  // border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
 
-	h2 {
-		display: block;
-		font-size: var(--h2);
-	}
+  h2 {
+    display: block;
+    font-size: var(--h2);
+  }
 
-	.slider {
-		width: 100%;
-		height: auto;
-	}
+  .slider {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .testiSlider {

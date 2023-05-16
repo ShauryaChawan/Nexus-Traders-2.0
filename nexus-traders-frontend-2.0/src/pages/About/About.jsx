@@ -1,4 +1,3 @@
-import React from "react";
 import "./about.scss";
 import AboutHeader from "./components/AboutHeader/AboutHeader";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";

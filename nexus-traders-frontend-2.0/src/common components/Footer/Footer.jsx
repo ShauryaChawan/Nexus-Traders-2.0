@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer.scss";
 
 const instagram = "./assets/images/instagram.png";
@@ -19,11 +18,7 @@ const Footer = () => {
           >
             <img src={instagram} alt="instagram" />
           </a>
-          <a
-            href="/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="/" target="_blank" rel="noreferrer">
             <img src={youtube} alt="instagram" />
           </a>
         </div>

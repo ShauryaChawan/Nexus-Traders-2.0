@@ -6,10 +6,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const Logo = "./assets/images/logo.png";
 
-// const Logo = Logo;
-
 const Navbar = () => {
-
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggler = () => {
@@ -33,13 +30,10 @@ const Navbar = () => {
           <NavLink to="/courses" className="menu">
             Courses
           </NavLink>
-          <NavLink to="/blogs" className="menu">
-            Blogs
-          </NavLink>
-          <NavLink to="/courses" className="menu btns">
-            <button className="menu">SignIn</button>
-            &nbsp;/&nbsp;
-            <button className="menu">SignUp</button>
+          <NavLink to="/courses" className="btns">
+            <button>SignIn</button>
+            <span>/</span>
+            <button>SignUp</button>
           </NavLink>
         </div>
 
@@ -49,7 +43,11 @@ const Navbar = () => {
       </div>
 
       {/* <div className="bottom" id="bottom_nav" style={{ display: isNavOpen ? "flex" : "none" }}> */}
-      <div className="bottom" id="bottom_nav" style={{ opacity: isNavOpen ? "1" : "0" }}>
+      <div
+        className="bottom"
+        id="bottom_nav"
+        style={{ opacity: isNavOpen ? "1" : "0" }}
+      >
         <NavLink to="/" className="menu">
           Home
         </NavLink>
@@ -62,7 +60,7 @@ const Navbar = () => {
         <NavLink to="/blogs" className="menu">
           Blogs
         </NavLink>
-        <NavLink to="/courses" className="menu btns">
+        <NavLink to="/courses" className="btns">
           <button className="menu">SignIn</button>
           &nbsp;/&nbsp;
           <button className="menu">SignUp</button>

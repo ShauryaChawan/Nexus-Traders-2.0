@@ -4,7 +4,6 @@ import "./homeHeader.scss";
 const HomeSampleImg = "./assets/images/home_sample_img_1.png";
 
 const HomeHeader = () => {
-
   return (
     <div
       className="homeHeader_container"

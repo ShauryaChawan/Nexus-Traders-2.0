@@ -3,14 +3,14 @@
   background-color: black;
   color: white;
   // height: 100px;
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 0.5s;
   position: relative;
 
   .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 
     .left {
       // border: 1px solid red; // do not delete
@@ -23,7 +23,7 @@
       // justify-content: space-around;
       justify-content: end;
       align-items: center;
-      gap: 5rem;
+      gap: 3rem;
       padding: 1rem;
       width: 100%;
       font-size: var(--normal_fs);
@@ -31,7 +31,12 @@
 
       .menu {
         cursor: pointer;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
         &:hover {
+          background-color: var(--NexusGold);
+          transition: 0s;
+          color: black;
           font-weight: bold;
         }
       }
@@ -44,17 +49,27 @@
         border: 2px solid var(--NexusGold);
         border-radius: 1rem;
         color: var(--NexusGold);
-        padding: 0 1rem;
+        &:hover {
+          transition: 0s;
+          background-color: var(--NexusGold);
+          button {
+            transition: 0s;
+            color: white;
+          }
+        }
 
         button {
-          // min-width: 115px;
           color: var(--NexusGold);
           border-radius: 1rem;
           border: 0;
           width: auto;
-          padding: 10px 20px;
+          padding: 0.5rem 2rem;
           font-size: var(--normal_fs);
           cursor: pointer;
+
+          &:hover {
+            font-weight: bold;
+          }
         }
       }
     }

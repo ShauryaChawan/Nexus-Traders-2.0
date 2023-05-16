@@ -1,7 +1,6 @@
 import "./homeAboutUs.scss";
 import { Link } from "react-router-dom";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight } from "react-icons/fa";
 
 const sujoy_hitesh_2 = "./assets/images/sujoy_hitesh_2.jpg";
 
