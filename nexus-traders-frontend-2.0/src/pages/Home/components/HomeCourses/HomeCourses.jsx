@@ -1,16 +1,19 @@
 import "./homeCourses.scss";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper";
 
-const videos = [
-  "./assets/videos/platinum_course_vid.mp4",
-  "./assets/videos/platinum_course_vid.mp4",
-  "./assets/videos/forex_campaign_vid.mp4",
-];
+// const videos = [
+//   "./assets/videos/platinum_course_vid.mp4",
+//   "./assets/videos/advanced_course_vid.mp4",
+//   "./assets/videos/forex_campaign_vid.mp4",
+// ];
+
+const platinum_course = "./assets/videos/platinum_course_vid.mp4";
+const advanced_course = "./assets/videos/advanced_course_vid.mp4";
+const forex_course = "./assets/videos/forex_campaign_vid.mp4";
 
 const CourseSwiperCard = () => {
   return (
@@ -29,19 +32,46 @@ const CourseSwiperCard = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        {videos.map((item, key) => {
+        {/* {videos.map((item, key) => {
           <SwiperSlide key={key}>
             <Link to="/courses">
-              <video
-                src={item}
-                controls={false}
-                autoPlay
-                loop
-                muted
-              ></video>
+              <video src={item} controls={false} autoPlay loop muted/>
             </Link>
           </SwiperSlide>;
-        })}
+        })} */}
+        <SwiperSlide>
+          <Link to="/courses">
+            <video
+              src={platinum_course}
+              controls={false}
+              autoPlay
+              loop
+              muted
+            ></video>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/courses">
+            <video
+              src={advanced_course}
+              controls={false}
+              autoPlay
+              loop
+              muted
+            ></video>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/courses">
+            <video
+              src={forex_course}
+              controls={false}
+              autoPlay
+              loop
+              muted
+            ></video>
+          </Link>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

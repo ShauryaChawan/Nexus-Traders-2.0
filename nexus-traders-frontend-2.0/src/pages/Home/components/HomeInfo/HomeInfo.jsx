@@ -54,7 +54,7 @@ const Cards = (props) => {
 Cards.propTypes = {
   img: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  content: PropTypes.array.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 const HomeInfo = () => {

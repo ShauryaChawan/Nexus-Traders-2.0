@@ -42,8 +42,11 @@ const Layout = () => {
     const videos = [
       // Home and Course Page videos
       "./assets/videos/platinum_course_vid.mp4",
+      "./assets/videos/platinum_course_vid_croped.mp4",
       "./assets/videos/advanced_course_vid.mp4",
-      "./assets/videos/forex_campaign_vid.mp4",
+      "./assets/videos/advanced_course_vid_croped.mp4",
+      "./assets/videos/forex_campaign_vid.mp4", 
+      "./assets/videos/forex_campaign_vid_croped.mp4", 
       "./assets/videos/sample_vid_3.mp4",
     ];
 

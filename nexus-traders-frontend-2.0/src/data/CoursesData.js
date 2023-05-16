@@ -24,7 +24,7 @@ export const CoursesData = [
   {
     title: "Forex Campaign",
     // video: "./assets/videos/advanced_course_vid.mp4",
-    video: "./assets/videos/forex_campaign_vid_cropped.mp4",
+    video: "./assets/videos/forex_campaign_vid_croped.mp4",
     duration: "6 weeks",
     old_online: 0,
     new_online: 0,
