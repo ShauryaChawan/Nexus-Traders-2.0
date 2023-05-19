@@ -17,7 +17,7 @@ const CourseCard = (props) => {
         <div className="content">
           <div className="detail">
             <b>Duration : </b> {props.duration} <br />
-            {props.new_online !== "0" ? (
+            {props.new_online !== 0 ? (
               <>
                 <b>Online : </b>
                 <span className="old">
