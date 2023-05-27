@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-const Logo = "./assets/images/logo.png";
+const Logo = "../../../public/assets/images/logo.png";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);

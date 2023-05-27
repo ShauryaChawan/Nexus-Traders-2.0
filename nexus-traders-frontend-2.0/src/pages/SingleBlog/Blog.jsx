@@ -67,14 +67,14 @@ const Blog = () => {
             )}
             <p className="author_name">By Thomas Sankara</p>
 
-            <div className="block_content">
-              { console.log("Hello") }
-              { console.log(singlePost.body) }
-              {/* <BlockContent
+            <div className="block_content_div">
+            {singlePost.body && (
+              <BlockContent
                 blocks={singlePost.body}
                 projectId="yop9hee8"
                 dataset="production"
-              /> */}
+              />
+              )}
             </div>
 
             <button className="btn">

@@ -10,11 +10,12 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    // padding: 1rem;
+    padding: 0 1rem 0 2rem ;
 
     h1 {
       margin: 1rem;
       font-size: var(--h1);
+      text-align: center;
     }
     .main_img {
       width: 80%;
@@ -24,8 +25,24 @@
       width: 100%;
       text-align: left;
     }
-    .block_content {
+    .block_content_div {
       text-align: justify;
+      
+      figure{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img{
+          // margin: 1rem;
+          width: 50%;
+        }
+      }
+      
+      p{
+        margin: 1rem 0;
+      }
+      
     }
     .btn {
       color: var(--NexusGold);
@@ -91,8 +108,11 @@
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
   .single_blog_page_container{
+    .blog_container {
+      width: 100%;
+    }
     .other_blogs_container{
       display: none;
     }

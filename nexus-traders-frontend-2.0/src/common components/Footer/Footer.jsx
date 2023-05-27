@@ -1,7 +1,7 @@
 import "./footer.scss";
 
-const instagram = "./assets/images/instagram.png";
-const youtube = "./assets/images/youtube.png";
+const instagram = "../../../public/assets/images/instagram.png";
+const youtube = "../../../public/assets/images/youtube.png";
 
 const Footer = () => {
   return (
