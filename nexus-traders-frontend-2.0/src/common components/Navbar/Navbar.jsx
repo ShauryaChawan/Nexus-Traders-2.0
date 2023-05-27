@@ -30,9 +30,9 @@ const Navbar = () => {
           <NavLink to="/courses" className="menu">
             Courses
           </NavLink>
-          {/* <NavLink to="/blogs" className="menu">
+          <NavLink to="/blogs" className="menu">
             Blogs
-          </NavLink> */}
+          </NavLink>
           {/* <NavLink to="/courses" className="btns">
             <button>SignIn</button>
             <span>/</span>
@@ -47,8 +47,9 @@ const Navbar = () => {
 
       <div
         className="bottom"
-        id="bottom_nav"
-        style={{ opacity: isNavOpen ? "1" : "0" }}
+        // id="bottom_nav"
+        // style={{ opacity: isNavOpen ? "1" : "0" }}
+        style={{ display: isNavOpen ? "flex" : "none" }}
       >
         <NavLink to="/" className="menu">
           Home
@@ -59,9 +60,9 @@ const Navbar = () => {
         <NavLink to="/courses" className="menu">
           Courses
         </NavLink>
-        {/* <NavLink to="/blogs" className="menu">
+        <NavLink to="/blogs" className="menu">
           Blogs
-        </NavLink> */}
+        </NavLink>
         {/* <NavLink to="/courses" className="btns">
           <button className="menu">SignIn</button>
           &nbsp;/&nbsp;

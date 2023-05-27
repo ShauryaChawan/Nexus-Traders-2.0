@@ -4,6 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Courses from "./pages/Courses/Courses";
+import Blogs from "./pages/Blogs/Blogs";
+import SingleBlog from "./pages/SingleBlog/Blog";
+import Error from "./pages/Error/Error";
 import SignIn from "./pages/SignIn/SignIn";
 import SignUp from "./pages/SignUp/SignUp";
 import Layout from "./Layout";
@@ -27,6 +30,14 @@ function App() {
           path: "/courses",
           element: <Courses />,
         },
+        {
+          path: "/blogs/:slug",
+          element: <SingleBlog />,
+        },
+        {
+          path: "/blogs",
+          element: <Blogs />,
+        },
       ],
     },
     {
@@ -40,6 +51,10 @@ function App() {
     {
       path: "/signup",
       element: <SignUp />,
+    },
+    {
+      path: "*",
+      element: <Error />,
     },
   ]);
 

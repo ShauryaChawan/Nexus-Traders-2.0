@@ -76,15 +76,26 @@ const Layout = () => {
     });
   }, []);
 
-  if (loading) {
-    return <div><Loading loading={loading}/></div>;
-  }
+  // if (loading) {
+  //   return <div><Loading loading={loading}/></div>;
+  // }
 
   return (
+    // <div>
+    //   <Navbar />
+    //   <Outlet />
+    //   <Footer />
+    // </div>
     <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </>
+      )}
     </div>
   );
 };
