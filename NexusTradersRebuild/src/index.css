@@ -1,0 +1,114 @@
+/* Cinzel */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cutive+Mono&display=swap");
+/* font-family: 'Cinzel', serif; */
+/* font-family: 'Cutive Mono', monospace; */
+
+/* Cinzel Decorative Font */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cutive+Mono&display=swap");
+/* font-family: 'Cinzel Decorative', cursive; */
+/* font-family: 'Cutive Mono', monospace; */
+
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+/* font-family: 'Cutive Mono', monospace; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* Varela Round */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Varela+Round&display=swap");
+/* font-family: 'Cutive Mono', monospace; */
+/* font-family: 'Varela Round', sans-serif; */
+
+:root {
+  /* Colors */
+  --NexusGold: #daa520;
+  --NexusBlack: #141416;
+  --NexusBlack2: #292929;
+  /* --WebsiteBackground: black; */
+  --FontColor: white;
+
+  /* Fonts */
+  --cinzel: "Cinzel", serif;
+  --cinzel_decorative: "Cinzel Decorative", cursive;
+  --poppins: "Poppins", sans-serif;
+  --varela_round: "Varela Round", sans-serif;
+
+  /* Device Break Points */
+  --WebSiteMaxWidth: 1400px;
+  /* Desktops, large screens          –> 1025px — 1200px */
+  --large: 1200px;
+  /* Small screens, laptops           –> 769px — 1024px */
+  --small: 1024px;
+  /* iPads, Tablets                   –> 481px — 800px */
+  --tablets-max: 800px;
+  /* Mobile devices                   –> 320px — 480px */
+  --mobile-max: 480px;
+
+  /* Font size */
+  --h1: 5rem;
+  --h2: 3rem;
+  --h3: 2rem;
+  --NexusHeading_fs: 5rem;
+  --NexusTagLine_fs: 2.1rem;
+  --medium_fs: 2rem;
+  --normal_fs: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: var(--poppins);
+  color: var(--FontColor);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body {
+  /* background-color: var(--WebsiteBackground); */
+  background-color: black;
+  transition: 0s;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+  /* color: black; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--cinzel);
+}
+
+p {
+  font-family: var(--poppins);
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 1400px) {
+  * {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+}
