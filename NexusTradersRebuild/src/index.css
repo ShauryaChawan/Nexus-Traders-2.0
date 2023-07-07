@@ -1,5 +1,5 @@
 /* Cinzel */
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cutive+Mono&display=swap");
 /* font-family: 'Cinzel', serif; */
 /* font-family: 'Cutive Mono', monospace; */
 
@@ -74,8 +74,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: white; */
-  /* color: black; */
+  scroll-snap-type: y mandatory;
+  /* height: 100vh; */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -94,6 +96,7 @@ h4,
 h5,
 h6 {
   font-family: var(--cinzel);
+  /* font-family: var(--cinzel_decorative); */
 }
 
 p {
@@ -103,6 +106,14 @@ p {
 input::placeholder {
   color: #fff;
 }
+
+/* section{
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  transition: all 1s ease-in-out;
+} */
 
 @media (max-width: 1400px) {
   * {
