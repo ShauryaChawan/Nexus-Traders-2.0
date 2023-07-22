@@ -4,8 +4,8 @@ export const CoursesData = [
     // video: "./assets/videos/platinum_course_vid.mp4",
     video: "./assets/videos/platinum_course_vid_croped.mp4",
     duration: "8 weeks",
-    old_online: 11999,
-    new_online: 9599,
+    old_online: 15000,
+    new_online: 12000,
     old_offline: 23999,
     new_offline: 19999,
     content: [
