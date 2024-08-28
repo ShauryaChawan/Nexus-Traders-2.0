@@ -4,5 +4,5 @@ Due to some reason the website is not commercially used. Thus the 'nexustraders.
 
 ## Links:
 
-1. Netlify: [https://master--curious-starburst-984120.netlify.app/](https://nexustraders.netlify.app/)
-2. Nexus Traders: http://nexustraders.in/
+1. Netlify: [nexustraders.netlify.app/](https://nexustraders.netlify.app/)
+2. Nexus Traders: nexustraders.in
